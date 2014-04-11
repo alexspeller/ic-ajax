@@ -127,7 +127,7 @@ if (typeof window.DS !== 'undefined'){
   Ember.onLoad('Ember.Application', function(Application){
     Application.initializer({
       name: 'ic-ajax_REST_Adapter',
-      after: 'store',
+      after: 'ember-data',
       initialize: function(container, application){
         if (request.OVERRIDE_REST_ADAPTER) {
           DS.RESTAdapter.reopen({
